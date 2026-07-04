@@ -202,7 +202,14 @@
   const btnLetterContinue = document.getElementById('btn-letter-continue');
 
   const loveLetterText =
-`My Dearest,
+`To my Cutuu Sweetu Babyy,
+
+My shonuu monuu sweetu i really love youuuuuuuuu.
+I know sometimes i might be annoying ,irritative,and childish 
+but its my way of expressing love ,u can say that its my love language and 
+u have to deal with it for the rest of your life.
+No matter whatever comes in between us we will sort it out 
+and be with each other together.
 
 I don't know exactly when it happened, only that somewhere between
 ordinary days and quiet conversations, you became the person I look
@@ -212,15 +219,16 @@ Thank you for the patience you show me, for the way you listen
 before you judge, and for loving me in all the small, steady ways
 that matter far more than grand gestures ever could.
 
-I admire you more than I probably say out loud — your kindness,
-your quiet strength, the way you keep showing up for the people
-you love, including me.
+Sometimes we fight,but in that fight i hope you dont forget 
+ our happy moments and how much i love you and.I know i am bit egoistic and wont text first 
+after fights but i am ur cutee little babyy na u must text me first 
+and i promise will be gentle with you.
 
 Whatever comes next, I want to face it with you. Not because life
 is perfect, but because it is better, softer, and infinitely more
 worth living when you are in it.
 
-Here's to every ordinary day we get to make extraordinary, together.
+Stay with me forever my Rakshuu Babyy,
 
 Always yours.`;
 
