@@ -1,0 +1,10 @@
+Add a royalty-free romantic instrumental MP3 here named:
+romantic-theme.mp3
+
+Good sources for royalty-free music:
+- Pixabay Music (pixabay.com/music)
+- YouTube Audio Library
+- Free Music Archive
+
+The site will automatically play it (muted-by-default browser
+autoplay rules mean it starts on the visitor's first click/tap).

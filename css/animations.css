@@ -1,0 +1,119 @@
+/* =====================================================
+   ANIMATIONS — keyframes used across the site
+   ===================================================== */
+
+@keyframes auroraDrift{
+  0%   { transform: translate(0,0) scale(1); }
+  100% { transform: translate(3%, -2%) scale(1.08); }
+}
+
+@keyframes moonFloat{
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-14px); }
+}
+
+@keyframes cloudDrift{
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(140vw); }
+}
+
+@keyframes heartbeat{
+  0%, 100% { transform: scale(1); }
+  25%      { transform: scale(1.14); }
+  40%      { transform: scale(0.96); }
+  60%      { transform: scale(1.1); }
+}
+
+@keyframes dotFade{
+  0%, 100% { opacity: 0; }
+  50%      { opacity: 1; }
+}
+
+@keyframes bloomSway{
+  0%, 100% { transform: rotate(-2deg); }
+  50%      { transform: rotate(2deg); }
+}
+
+@keyframes rippleAnim{
+  to{ transform: scale(4); opacity: 0; }
+}
+
+@keyframes barBounce{
+  0%, 100% { transform: scaleY(0.4); }
+  50%      { transform: scaleY(1); }
+}
+
+/* Generic fade / slide / scale utility animations */
+@keyframes fadeIn{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+@keyframes fadeOut{
+  from{ opacity: 1; }
+  to{ opacity: 0; }
+}
+@keyframes slideUp{
+  from{ opacity: 0; transform: translateY(30px); }
+  to{ opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn{
+  from{ opacity: 0; transform: scale(.85); }
+  to{ opacity: 1; transform: scale(1); }
+}
+@keyframes popBounce{
+  0%   { transform: scale(.4); opacity: 0; }
+  60%  { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.screen.active-screen .glass-card,
+.screen.active-screen .letter-paper,
+.screen.active-screen .reasons-wrap,
+.screen.active-screen .dates-wrap{
+  animation: slideUp .8s var(--ease-soft) both;
+}
+
+/* Floating petal fall */
+@keyframes petalFall{
+  0%   { transform: translateY(-10vh) translateX(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  100% { transform: translateY(110vh) translateX(var(--drift, 40px)) rotate(360deg); opacity: 0; }
+}
+
+/* Floating background hearts drifting upward */
+@keyframes heartFloatUp{
+  0%   { transform: translateY(10vh) scale(var(--hs,1)); opacity: 0; }
+  10%  { opacity: .8; }
+  100% { transform: translateY(-110vh) scale(var(--hs,1)); opacity: 0; }
+}
+
+/* Question page — YES button glow pulse as it grows */
+@keyframes yesGlow{
+  0%, 100% { box-shadow: 0 8px 24px rgba(255,158,196,.5); }
+  50%      { box-shadow: 0 12px 40px rgba(255,158,196,.85); }
+}
+.btn-yes.glowing{ animation: yesGlow 1.6s ease-in-out infinite; }
+
+/* Envelope float-in */
+@keyframes envelopeFlyIn{
+  0%   { transform: translateY(-120px) rotate(-8deg) scale(.6); opacity: 0; }
+  100% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+}
+.envelope-scene .envelope{ animation: envelopeFlyIn 1s var(--ease-soft) both; }
+
+/* Heart grid pop-in stagger handled via inline delay from JS */
+.mini-heart-btn{ animation: popBounce .5s var(--ease-soft) both; }
+
+/* Final love text */
+#final-love-text.showing{
+  animation: scaleIn 1.2s var(--ease-soft) both;
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce){
+  *{
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
